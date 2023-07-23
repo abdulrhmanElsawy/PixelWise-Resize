@@ -46,29 +46,6 @@ function Landing() {
         });
     };
     
-    const handleImageUpload = (event) => {
-        const fileInput = event.target;
-        const files = fileInput.files;
-    
-        if (!files || files.length === 0) {
-        setImageUploaded(false);
-        return;
-        }
-    
-        setImageUploaded(true);
-        setUploadedFiles(Array.from(files));
-    
-        Promise.all(Array.from(files).map((file) => getImageData(file))).then((imageDataArray) => {
-        setImageData(imageDataArray);
-    
-        // Update dimensions for each image separately
-        const newDimensions = imageDataArray.map((data) => ({
-            width: data.width,
-            height: data.height,
-        }));
-        setDimensions(newDimensions);
-        });
-    };
 
     const downloadZip = async (blob, filename) => {
         const link = document.createElement('a');
@@ -216,6 +193,51 @@ function Landing() {
         event.stopPropagation();
 
         const files = event.dataTransfer.files;
+
+        if (!files || files.length === 0) {
+            setImageUploaded(false);
+            return;
+        }
+
+        setImageUploaded(true);
+
+        // Handle each file in the files array
+        const filesArray = Array.from(files);
+        setUploadedFiles(filesArray);
+
+        for (let i = 0; i < filesArray.length; i++) {
+            const file = filesArray[i];
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                const img = new Image();
+                img.onload = function () {
+                    // Check the aspect ratio and set the initial width and height accordingly
+                    const originalAspectRatio = img.width / img.height;
+                    setOriginalAspectRatio(originalAspectRatio);
+                    setInitialImageDimensions(img); // Set initial width and height for the dropped image
+
+                    if (calculateAspect) {
+                        setWidth(img.width);
+                        setHeight(img.height);
+                    }
+                };
+                img.src = event.target.result;
+
+
+            };
+
+            reader.readAsDataURL(file);
+        }
+    };
+
+
+    
+    const handleImageUpload = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const files = event.target.files;
 
         if (!files || files.length === 0) {
             setImageUploaded(false);
