@@ -1,0 +1,204 @@
+.made-by{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: #00283a;
+    color: #70ba65;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.made-by a{
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+
+.landing{
+    min-height: 100vh;
+    color: #fff;
+}
+
+.landing .landing-content{
+    margin-right: 239px;
+}
+
+.landing .landing-content .image-container{
+    margin: 17px;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.landing .landing-content .image-container img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.landing .landing-content .image-container input{
+    width: 29%;
+    margin-top: 13px;
+    border-radius: 15px;
+    border: 1px solid #70ba5e;
+    background-color: #00151f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.landing .landing-content .image-container span{
+    width: 15%;
+    margin-top: 15px;
+}
+
+
+.landing .landing-content #fileInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    padding: 37px;
+    gap: 21px;
+    border: 4px dotted #70ba5e;
+    margin: 70px;
+    border-radius: 25px;
+}
+
+
+.landing .landing-content #fileInput input{
+    height: 50px;
+    border: 1px solid #70ba5e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 37px;
+    width: 263px;
+}
+
+
+
+.landing .landing-content .generalinputs{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #00283a;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+}
+
+
+
+.landing .landing-content .generalinputs label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    font-size: 15px;
+}
+
+
+.landing .landing-content .generalinputs input[type="checkbox"]{
+    width: 29px;
+    padding: 8px;
+    height: 22px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+
+
+.landing .landing-content .generalinputs button{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #70ba5e;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.landing .landing-content .generalinputs input[type="number"]{
+    width: 100%;
+    height: 44px;
+    background-color: #00151f;
+    border-radius: 7px;
+    border: 1px solid #62ba5e;
+    outline: none;
+    color: #70ba58;
+    padding-left: 10px;
+}
+
+
+
+@media(max-width:950px){
+    .landing .landing-content #fileInput {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 450px;
+        padding: 37px;
+        gap: 21px;
+        border: 4px dotted #70ba5e;
+        margin: 0;
+        border-radius: 25px;
+    }
+    .landing .landing-content .generalinputs {
+        position: relative;
+        right: 0;
+        top: 0;
+        background-color: #00283a;
+        height: 100%;
+        width: 250px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 12px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .landing .landing-content{
+        margin-right: 0;
+    }
+
+    .landing .landing-content .image-container {
+        margin: 0;
+        margin-top: 39px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
