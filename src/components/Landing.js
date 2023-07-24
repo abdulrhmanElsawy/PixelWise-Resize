@@ -407,6 +407,8 @@ function Landing() {
                         onChange={handleWidthAllChange}
                     />
 
+                    <h1> Pixel Wise Resize </h1>
+
                     
                     </div>
 
