@@ -58,6 +58,19 @@
 }
 
 
+.landing .landing-content .image-container select{
+    width: 29%;
+    margin-top: 13px;
+    border-radius: 15px;
+    border: 1px solid #70ba5e;
+    background-color: #00151f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+}
+
+
 .landing .landing-content .image-container span{
     width: 15%;
     margin-top: 15px;
@@ -91,6 +104,18 @@
     width: 263px;
 }
 
+
+#fileInput button{
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #70ba5e;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
 
 
 .landing .landing-content .generalinputs{
@@ -144,6 +169,17 @@
 
 
 .landing .landing-content .generalinputs input[type="number"]{
+    width: 100%;
+    height: 44px;
+    background-color: #00151f;
+    border-radius: 7px;
+    border: 1px solid #62ba5e;
+    outline: none;
+    color: #70ba58;
+    padding-left: 10px;
+}
+
+.landing .landing-content .generalinputs select{
     width: 100%;
     height: 44px;
     background-color: #00151f;

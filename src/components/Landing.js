@@ -333,24 +333,24 @@ function Landing() {
                     <span> W : px </span>
                     <input
                         type="number"
+                        readonly
                         placeholder="Width in pixels"
                         value={dimensions[index]?.width || ''}
                         onChange={(event) => handleWidthInputChange(event, index)}
                         disabled={!imageUploaded}
                         className="width-inputs"
-                        readonly
                     />
 
                         <span> H : px </span>
 
                     <input
                         type="number"
+                        readonly
                         placeholder="Height in pixels"
                         value={dimensions[index]?.height || ''}
                         onChange={(event) => handleHeightInputChange(event, index)}
                         disabled={!imageUploaded}
                         className="height-inputs"
-                        readonly
                     />
                 </div>
                 </div>
