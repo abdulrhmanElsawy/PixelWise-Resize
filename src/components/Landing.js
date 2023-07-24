@@ -338,6 +338,7 @@ function Landing() {
                         onChange={(event) => handleWidthInputChange(event, index)}
                         disabled={!imageUploaded}
                         className="width-inputs"
+                        readonly
                     />
 
                         <span> H : px </span>
@@ -349,6 +350,7 @@ function Landing() {
                         onChange={(event) => handleHeightInputChange(event, index)}
                         disabled={!imageUploaded}
                         className="height-inputs"
+                        readonly
                     />
                 </div>
                 </div>
