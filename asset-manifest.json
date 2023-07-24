@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PixelWise-Resize/static/css/main.9f24cd61.css",
-    "main.js": "/PixelWise-Resize/static/js/main.9b4d0361.js",
+    "main.css": "/PixelWise-Resize/static/css/main.c798ce94.css",
+    "main.js": "/PixelWise-Resize/static/js/main.00f825bb.js",
     "static/js/787.7fd63377.chunk.js": "/PixelWise-Resize/static/js/787.7fd63377.chunk.js",
     "index.html": "/PixelWise-Resize/index.html",
-    "main.9f24cd61.css.map": "/PixelWise-Resize/static/css/main.9f24cd61.css.map",
-    "main.9b4d0361.js.map": "/PixelWise-Resize/static/js/main.9b4d0361.js.map",
+    "main.c798ce94.css.map": "/PixelWise-Resize/static/css/main.c798ce94.css.map",
+    "main.00f825bb.js.map": "/PixelWise-Resize/static/js/main.00f825bb.js.map",
     "787.7fd63377.chunk.js.map": "/PixelWise-Resize/static/js/787.7fd63377.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f24cd61.css",
-    "static/js/main.9b4d0361.js"
+    "static/css/main.c798ce94.css",
+    "static/js/main.00f825bb.js"
   ]
 }
