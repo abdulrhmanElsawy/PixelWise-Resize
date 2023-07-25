@@ -382,7 +382,7 @@ function Landing() {
                         </h6>
 
                         
-                        <a href='https://abdulrhmanelsawy.github.io/ChromaSelect/'>
+                        <a href='https://abdulrhmanelsawy.github.io/ChormaSelect/'>
                             Chroma Select
                         </a>
 
