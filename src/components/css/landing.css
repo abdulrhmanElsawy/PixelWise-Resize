@@ -248,3 +248,40 @@
     
 }
 
+
+
+
+.another-tools{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+
+.another-tools h6{
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+}
+
+/* Add the following styles to your landing.css file */
+
+
+
+.another-tools a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0;
+    padding: 7px;
+    background-color: #00151f;
+    color: #65ba65;
+    border-radius: 6px;
+    margin: 8px;
+}
+

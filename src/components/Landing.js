@@ -375,6 +375,25 @@ function Landing() {
             <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                 <div className='generalinputs'>
 
+                    
+                <div className='another-tools'>
+                        <h6> 
+                            Another Tools
+                        </h6>
+
+                        
+                        <a href='https://abdulrhmanelsawy.github.io/ChromaSelect/'>
+                            Chroma Select
+                        </a>
+
+                        <a href='https://abdulrhmanelsawy.github.io/FormatFlipper/'>
+                            Format Flipper
+                        </a>
+
+
+                    </div>
+
+
                     <label>
                     Calculate Aspect Ratio:
                     <input
